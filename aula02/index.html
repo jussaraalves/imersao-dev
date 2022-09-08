@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+          <h1 class="page-title"> CONVERSOR DE MOEDAS </h1>
+          <p class="page-subtitle">
+            Descubra os valores 
+          </p>
+          <h3>IMERSÃO <div class="page-dev">DEV</div></h3>
+          <div class="entradaUsuario">
+            <label id="labelMoeda" for="moeda">
+              Valor em Dólar
+            </label>
+            <input type="number" id="valor" placeholder="0,00"/>
+            
+            <img class="img-seta" src="src/images/setas.png" alt="">
+  
+            <select id="tiposDeMoedas" onchange="mudarMoeda()">
+              <option value="dolar">Dólar(USD)</option>
+              <option value="euro" id="valorEmEuro" >Euro(EUR)</option>
+              <option value="iene">Iene(JPY)</option>
+            </select><br>
+          </div>
+
+          <button  type="submit" onclick="converter()">Converter</button>
+          <h2 id="valorConvertido"></h2>
+        </div>
+    </div>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+      <script src="src/js/script.js"></script>
+</body>
+</html>
